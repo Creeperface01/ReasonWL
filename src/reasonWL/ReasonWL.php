@@ -45,7 +45,7 @@ class ReasonWL extends PluginBase implements Listener{
         $this->initConfig();
     }
 
-    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
         if(strtolower($cmd->getName()) == "rwl"){
             switch(strtolower($args[0])){
                 case "reload":
